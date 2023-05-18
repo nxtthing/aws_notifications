@@ -12,4 +12,5 @@ Gem::Specification.new do |s|
   s.files       = Dir["lib/aws_notifications/engine.rb", "app/**/*.rb", "config/**/*.rb", "db/**/*.rb"]
 
   s.add_dependency "rails"
+  s.add_dependency "multi_json"
 end

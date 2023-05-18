@@ -8,7 +8,7 @@ module Aws
         acc[key] = v if key
       end
 
-      params = ::JSON.parse(request.body)
+      params = ::MultiJson.load(request.body)
 
       aws_notification = AwsRecords::Notification.new(id:, headers:, params:)
 
