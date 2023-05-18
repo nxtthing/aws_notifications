@@ -1,3 +1,5 @@
+require "multi_json"
+
 module Aws
   class NotificationsController < ::ActionController::Base
     def create
