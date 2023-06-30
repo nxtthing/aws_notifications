@@ -2,6 +2,8 @@ require "multi_json"
 
 module Aws
   class NotificationsController < ::ActionController::Base
+    skip_before_action :verify_authenticity_token
+
     def create
       id = request.headers[:X_AMZ_SNS_MESSAGE_ID]
 
